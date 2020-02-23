@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            border: 1px solid red;
+            /* 溢出文字换行（默认）
+            white-space: normal; */
+
+            /* 1.强制在同一行显示所有文本，直到文本结束或者遭遇br标签对象才换行 */
+            white-space: nowrap;
+
+            /* 2.超出部分隐藏 */
+            overflow: hidden;
+
+            /* 不显示省略号标志，而是简单的裁剪
+            text-overflow: clip; */
+
+            /* 3.超出的部分省略号代替 */
+            text-overflow: ellipsis;
+
+
+
+
+
+            /* 注意：要想超出部分省略号1、2、3的代码一句不能少 */
+        }
+    </style>
+</head>
+
+<body>
+    <li>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</li>
+</body>
+
+</html>

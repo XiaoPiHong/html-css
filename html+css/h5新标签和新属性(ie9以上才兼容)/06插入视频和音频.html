@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 1050px;
+            height: 239px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 传统插入视频的方法：
+        在第三方库（比如腾讯，土豆，优酷）中上传视频，再通过分享获取小框架代码到网页上
+    注意：该方法是需要装flash插件的，如今flash谷歌已经不支持了
+    缺点：有广告，除非是会员
+    -->
+    <iframe height=498 width=510 src='http://player.youku.com/embed/XMzA2MTY4MTE2'
+        frameborder=0 'allowfullscreen'></iframe>
+
+
+
+
+
+    <!-- 新增的插入音频方法：用audio元素，但audio元素只支持三种文件格式，兼容问题看下面背景图-->
+    <div style="background: url(../images/audio.png) no-repeat;"></div>
+    <!-- 新增的插入视频方法：用video元素，但video元素只支持三种文件格式，兼容问题看下面背景图-->
+    <div style="background: url(../images/video.png) no-repeat;"></div>
+
+
+
+
+
+    <!-- autoplay属性是自动播放
+        controls是显示暂停和控制音量的界面
+        loop是无限循环播放
+    -->
+    <audio src="xxx.mp3" autoplay controls loop></audio>
+    <!-- 也可以是下面这种写法，目的是为了兼容各种版本的浏览器 -->
+    <audio autoplay controls loop>
+        <!-- 若该版本的浏览器不支持该格式，就往下寻找支持的格式 -->
+        <source src="xxx.mp3">
+        <source src="xxx.ogg">
+        你的浏览器版本太低
+    </audio>
+
+
+
+
+
+    <!-- autoplay属性是自动播放
+        controls是显示暂停和控制音量的界面
+        loop是无限循环播放
+     -->
+    <video autoplay controls loop>
+        <source src="xxx.mp4">
+        <source src="xxx.ogg">
+        你的浏览器版本太低
+    </video>
+</body>
+
+</html>

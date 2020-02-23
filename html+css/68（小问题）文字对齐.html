@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 30px;
+            border: 1px solid black;
+            line-height: 30px;
+        }
+
+        span {
+            width: 10px;
+            height: 10px;
+            background-color: palegoldenrod;
+            display: inline-block;
+            /* 此时的文字和span是基线对齐的,给span加margin-top会使它们一起移动 */
+            /* 下列代码是让它们中线对齐 */
+            vertical-align: middle;
+            /* 中线对齐后再margin-top就不会一起移动了 */
+            margin-top: 30px;
+        }
+
+
+
+        /* 总结：一般 display: inline-block;  和 vertical-align: middle;  是一起搭配使用的 */
+    </style>
+</head>
+
+<body>
+    <div>
+        <span></span>文字
+    </div>
+</body>
+
+</html>

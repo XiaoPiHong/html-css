@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            width: 200px;
+            height: 300px;
+            background-color: pink;
+            transition: all 1s;
+
+        }
+
+        .div1:hover {
+            /* 分别表示X轴和Y轴倾斜的角度  若只写一个，则表示x轴的倾斜角度 */
+            transform: skew(30deg, 30deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1"></div>
+</body>
+
+</html>

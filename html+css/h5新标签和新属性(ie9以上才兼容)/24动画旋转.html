@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 214px;
+            height: 214px;
+            position: relative;
+        }
+
+        div img {
+            /* 调用动画 */
+            animation: web 2s linear infinite;
+        }
+
+        /* 声明动画 */
+        @keyframes web {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        div p {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 214px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="../images/web.png">
+        <p>web前端</p>
+    </div>
+</body>
+
+</html>

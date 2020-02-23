@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 相对定位（自恋型）
+        注意：1.每次移动的位置是以自己的 左上角 为基点移动（相对与自己来移动，所有是自恋型）
+
+        2.它可以通过边偏移移动位置，但是原来的位置继续占有（不脱离标准流，与浮动的区别）
+        */
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .top {
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+
+        .bottom {
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top"></div>
+    <div class="bottom"></div>
+</body>
+
+</html>

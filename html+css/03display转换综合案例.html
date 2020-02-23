@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0 0;
+        }
+
+        .div1 {
+            height: 250px;
+            background-color: pink;
+            text-align: center;
+            /*子元素是行内或者行内块元素才可以直接使用text-align:center来设置它的儿子居中对齐，
+            因为可以把它看成一个文本*/
+        }
+
+        .div1>a {
+            width: 100px;
+            height: 50px;
+            background-color: orange;
+            display: inline-block;
+            border-radius: 5px;
+            line-height: 50px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+        }
+
+        .div1>a:hover {
+            background-color: cornflowerblue;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <a href="#">网站首页</a>
+        <a href="#">网站首页</a>
+        <a href="#">网站首页</a>
+        <a href="#">网站首页</a>
+        <a href="#">网站首页</a>
+        <a href="#">网站首页</a>
+    </div>
+</body>
+
+</html>

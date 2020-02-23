@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 用过渡的效果来体现2d缩放 */
+            transition: all 2s;
+        }
+
+        .div1:hover {
+            /* 宽度变为原来的80%，高度不变
+            transform: scale(0.8, 1); */
+
+            /* 宽度不变，高度变为原来80%
+            transform: scale(1,0.8); */
+
+            /* 高度省略 默认，和宽度一样同时变为原来的80% */
+            transform: scale(0.8);
+        }
+
+
+
+        /* 下面是新浪一个另图片缩放的例子 */
+        .div2 {
+            width: 200px;
+            height: 130px;
+            overflow: hidden;
+        }
+
+        .div2 img {
+            width: 200px;
+            height: 130px;
+            transition: all 1s;
+        }
+
+        .div2:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1"></div>
+    <div class="div2"><img src="../images/11.jpg" alt=""></div>
+</body>
+
+</html>

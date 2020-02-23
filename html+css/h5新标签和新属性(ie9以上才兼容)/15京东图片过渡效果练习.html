@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* 该盒子要比img标签的宽度大10像素 */
+            width: 150px;
+            height: 120px;
+            border: 2px solid red;
+            /* 超出隐藏 */
+            overflow: hidden;
+        }
+
+        div img {
+            width: 160px;
+            height: 120px;
+            /* 过渡 */
+            transition: all 0.3s;
+        }
+
+        div img:hover {
+            margin-left: -10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div><img src="../images/11.jpg" alt=""></div>
+</body>
+
+</html>

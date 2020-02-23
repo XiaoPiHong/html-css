@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 问题1：
+        设置一个盒子的内边距padding会把本身的盒子撑大（若一个盒子宽高都为50px，设置一个
+        内边距为20px的属性（padding:20px;），则该盒子被撑大成宽高都为90px）
+        */
+
+        /*问题2：
+        border:1px soild red;(也会影响本身盒子的大小)
+        */
+
+        /*问题3：padding:20px;(上下左右都为20px)
+                padding:20px 10px;(上下为20px   左右为20px)
+                padding:10px 20px 30px;(上为10px 左右为20px 下为30px)
+                padding:10px 20px 30px 40px;(上为10px 右为20px 下为30px 左为40px)
+        */
+
+        /*总结：
+        盒子实际大小   =   padding   +   border的边框值
+        */
+        .div1 {
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+            padding: 20px;
+            border: 1px solid red;
+        }
+
+        .div2 {
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+</body>
+
+</html>

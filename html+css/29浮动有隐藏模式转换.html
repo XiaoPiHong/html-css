@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 浮动可以让元素转换为行内块元素 */
+        div {
+            height: 100px;
+            background-color: pink;
+            /* 可以让元素默认转换为行内块元素 */
+            float: left;
+        }
+
+        span {
+            width: 300px;
+            height: 110px;
+            background-color: purple;
+            /* 妙用：如果给元素添加了浮动  则不需要模式转换也可以在同一行显示   因为默认转成了行内块元素 */
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div>恭喜发财</div>
+    <span>1111</span>
+</body>
+
+</html>

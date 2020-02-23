@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css3以前的办法浮动将盒子分成三等分，并且随屏幕变小而变小（伸缩布局），
+        缺点：浮动会脱标，影响别人所有并不好
+            section {
+            width: 80%;
+            height: 150px;
+            margin: 100px auto;
+        }
+
+        section div {
+            width: 33.33%;
+            height: 100%;
+            float: left;
+        }
+
+        section div:nth-child(1) {
+            background-color: skyblue;
+        }
+
+        section div:nth-child(2) {
+            background-color: purple;
+        }
+
+        section div:nth-child(3) {
+            background-color: green;
+        } */
+
+
+
+
+        /* css3 flex伸缩布局办法*/
+        section {
+            width: 80%;
+            height: 150px;
+            margin: 100px auto;
+            /* 步骤1.给父亲添加 伸缩布局：display: flex; */
+            display: flex;
+        }
+
+        section div {
+            height: 100%;
+            /* 步骤2.给孩子划分大小（孩子份数），这里有3个孩子，就是每个孩子一等份，总共把父亲分成3分 */
+            flex: 1;
+
+        }
+
+        section div:nth-child(1) {
+            background-color: skyblue;
+            /* 这里是给这个孩子分两份，所以它占两份的位置，其他的占一份 */
+            flex: 2;
+        }
+
+        section div:nth-child(2) {
+            background-color: purple;
+            /* 可以随意给他们添加margin，以前的话需要计算 */
+            margin: 0 10px;
+        }
+
+        section div:nth-child(3) {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- css3之前伸缩布局方法 -->
+    <!-- <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section> -->
+
+    <!-- css3 flex伸缩布局办法 -->
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section>
+</body>
+
+</html>

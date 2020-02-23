@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            display: inline;
+            /* 块级元素转换成行内元素 */
+        }
+
+        .div1 {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            display: inline-block;
+            /* 块级元素转换成行内块元素 */
+        }
+
+        span {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            display: block;
+            /*行内元素转成块级元素*/
+        }
+
+        a {
+            width: 50px;
+            height: 50px;
+            text-decoration: none;
+            background-color: red;
+            display: inline-block;
+            /*行内元素转成行内块元素*/
+        }
+    </style>
+</head>
+
+<body>
+    <div>111</div>
+    <div>222</div>
+    <div>333</div>
+    <div class="div1">111</div>
+    <span>111</span>
+    <span>222</span>
+    <span>333</span>
+    <a href="#">百度</a>
+    <a href="#">百度</a>
+    <a href="#">百度</a>
+</body>
+
+</html>

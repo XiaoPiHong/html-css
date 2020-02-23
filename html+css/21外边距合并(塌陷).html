@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*外边距合并
+        2.嵌套块元素垂直外边距合并（外边距塌陷问题） 
+        解决方法：1.给父元素加边框border或者padding-top；2.为父元素
+        添加overflow:hidden;*/
+        .father {
+            width: 200px;
+            height: 200px;
+            background-color: plum;
+            /* padding-top: 30px;可以让子元素往下移动，但是要用高度减去内边距 */
+            padding-top: 1px;
+            /* overflow: hidden; */
+        }
+
+        .son {
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            /* 只写margin-top: 50px;不可以让子元素往下移，它会带着父元素往下移
+            （但是）左右的margin是可以让子元素移动的*/
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>

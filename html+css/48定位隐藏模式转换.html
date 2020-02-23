@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 注意：
+        绝对定位和固定定位都会模式转换为  行内块元素
+         */
+        .div1 {
+            background-color: purple;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        .div2 {
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            left: 100px;
+            top: 200px;
+        }
+
+        /* 浮动的模式转换，会转换为行内块元素 */
+        .div3 {
+            width: 200px;
+            height: 200px;
+            float: right;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+
+</html>

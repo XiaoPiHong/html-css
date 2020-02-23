@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 子绝父相  主要是运用了父亲相对定位，父亲没有脱标仍然占位置，而儿子绝对定位脱标不占位置，父亲不
+        影响后面的布局，而儿子也不影响里面的布局
+         */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .father {
+            width: 640px;
+            height: 175px;
+            background-color: pink;
+            margin: 0 auto;
+            /* 父亲位置相对定位 */
+            position: relative;
+            padding: 12px 80px 13px;
+        }
+
+        .left {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            /* 儿子位置绝对定位 */
+            position: absolute;
+            top: 75px;
+            left: 0;
+        }
+
+        .right {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            /* 儿子位置绝对定位 */
+            position: absolute;
+            top: 75px;
+            right: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .father ul {
+            overflow: hidden;
+        }
+
+        .father li {
+            width: 200px;
+            height: 175px;
+            background-color: green;
+            float: left;
+        }
+
+        .center {
+            margin: 0 20px;
+        }
+
+        .footer {
+            width: 800px;
+            height: 150px;
+            background-color: purple;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="left"></div>
+        <div class="right"></div>
+        <ul>
+            <li></li>
+            <li class="center"></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="footer"></div>
+</body>
+
+</html>

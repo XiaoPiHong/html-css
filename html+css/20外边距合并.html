@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*外边距合并
+    1.相邻块元素，垂直外边距合并(最终盒子的距离是最大的那个外边距)
+    解决方法：避免
+    */
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+        }
+
+        .div1 {
+            margin-bottom: 50px;
+        }
+
+        .div2 {
+            background-color: pink;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">1</div>
+    <div class="div2">1</div>
+</body>
+
+</html>

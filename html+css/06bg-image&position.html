@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .div1 {
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+            background-image: url(images/1.jpg);
+            /*不平铺*/
+            background-repeat: no-repeat;
+
+            /* ①background-position是用来定位背景图片在盒子里的位置 
+            ②background-position: x y;第一个参数是x轴位置，第二个参数是y轴位置
+            （如果只写一个方位名词，宁外一个默认居中）
+            ③top上 bottom下 left左 right右*/
+
+            /* 水平垂直居中 */
+            background-position: center center;
+        }
+
+        .div2 {
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+            background-image: url(images/1.jpg);
+            /*不平铺*/
+            background-repeat: no-repeat;
+
+            /*①background-position是用来定位背景图片在盒子里的位置
+            ②background-position后面也可以更 值px*/
+
+            /*往右20px 往下50px*/
+            background-position: 20px 50px;
+            /* background-position: 10px center;（值和方位名词混合写法） */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 大多数时候<div>里面放图片并部署<img>元素，而是在<div>里设置背景图片 -->
+    <div class="div1"></div><br>
+    <div class="div2"></div>
+</body>
+
+</html>

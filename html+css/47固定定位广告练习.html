@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top {
+            height: 44px;
+            /* 背景和背景图片如果没有宽高是不会撑开盒子的(即不会显示)，所以一定要给宽高 */
+            background: url(images/top.png) no-repeat top center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .box {
+            width: 1002px;
+            /* 因为上面导航栏是固定定位，不占位置的，所以一定要给个外边距它才不会被遮着 */
+            margin: 44px auto 0;
+        }
+
+        .ad-l,
+        .ad-r {
+            position: fixed;
+            top: 100px;
+        }
+
+        .ad-l {
+            left: 0;
+        }
+
+        .ad-r {
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/ad-l.png" class="ad-l" width="120px" height="288px">
+    <img src="images/ad-r.png" class="ad-r">
+    <div class="top"></div>
+    <div class="box"><img src="images/box.png" width="1002px" height="1760px"></div>
+</body>
+
+</html>

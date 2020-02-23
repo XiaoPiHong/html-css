@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            width: 80%;
+            height: 150px;
+            margin: 100px auto;
+            display: flex;
+            /* section最小宽度为400px 
+            min-width: 400px;*/
+
+            /* section最大宽度为500px */
+            max-width: 500px;
+
+            /* section最小高度度为400px */
+            min-height: 400px;
+
+            /* section最大宽度为400px 
+            max-height: 400px;*/
+
+        }
+
+        section div {
+            height: 100%;
+        }
+
+        section div:nth-child(1) {
+            background-color: skyblue;
+            width: 200px;
+        }
+
+        section div:nth-child(2) {
+            background-color: purple;
+            flex: 1;
+        }
+
+        section div:nth-child(3) {
+            background-color: green;
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>它占200px</div>
+        <div>减200px剩下的它占1份</div>
+        <div>减200px剩下的它占1份</div>
+    </section>
+</body>
+
+</html>

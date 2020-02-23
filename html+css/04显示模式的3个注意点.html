@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        a {
+            width: 300px;
+            height: 400px;
+            display: inline-block;
+            text-decoration: none;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 一般块级元素里面可以放块级元素、行内元素、行内块元素 -->
+    <!-- 一般行内元素里面可以放行内元素、行内块元素 -->
+
+    <!-- 注意
+    1.<p>、<h>标签里面不能存放其他块元素。（因为它是文字标签）
+    2.<a>标签里面不可以放<a>标签。
+    3.<a>里面可以放块级元素。
+    -->
+    <a href="#">
+        <div>
+            <h3>111</h3>
+            <p>111</p>
+        </div>
+        <img src="#" alt="">
+    </a>
+
+</body>
+
+</html>

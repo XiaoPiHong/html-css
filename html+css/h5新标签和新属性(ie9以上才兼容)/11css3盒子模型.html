@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 盒子模型分为两种：
+        1.css2中的（外加模式） box-sizing: content-box;（默认值）
+        盒子的实际大小为：width+padding+border
+
+        2.css3中的（内减模式） box-sizing: border-box;
+        盒子的实际大小为：width（即padding和border包含在width里面）
+        */
+
+        .div1 {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            border-right: 10px solid red;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .div2 {
+            width: 300px;
+            height: 300px;
+            background-color: palegoldenrod;
+            border-right: 10px solid red;
+            padding: 20px;
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+</body>
+
+</html>

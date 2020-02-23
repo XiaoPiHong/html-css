@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .kuai {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .kuai2 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+
+        .hang {
+            background-color: red;
+        }
+
+        .hang2 {
+            background-color: purple;
+        }
+
+        .hang3 {
+            background-color: green;
+            text-decoration: none;
+        }
+
+        input {
+            width: 150px;
+            height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--一.选择器
+    1.多类名选择器：
+    属性class的参数里面可以有两个或多个类选择器（效果跟css样式的书写顺序有关）
+    .a{color:red;} .b{font-size:30px;}
+    <div class="a b"></div>
+    
+    2.id选择器：
+    一个id选择器只能给一个标签使用，不能重复使用
+    #a{color:red}
+    <div id="a"></div>
+    
+    3.通配符选择器：
+    *号代表所有标签的意思
+    *{ color:red;}
+    
+    4.标签选择器：
+    span{font-size:20px;}
+    
+    5.后代选择器：
+    div p{font-size:20px;}
+    .a p{font-size:20px;}
+    
+    6.子代选择器(亲儿子)：
+    ul li > a{...}
+    .father > a{...}
+    
+    7.交集选择器(既要是div也要是class="red",用的较少)：
+    div.red{color:red;}
+    
+    8.并集选择器(div和span和h1都变成红色，逗号隔开)：
+    div,span,h1{color:red;}
+    
+    9.伪类选择器（：号开头）：
+    :link /未访问的连接/
+    :visited /已经访问的连接/
+    :hover /鼠标移动到连接上/
+    :active /选定的连接/
+    a:link{color:red;} a:visited{color:blue;} a:hover{color:black} a:active{color:green}
+    注意：4种状态要是写全，需要按上面顺序写，不可换顺序。
+    
+    二.字体样式
+    1.字号大小：font-size:16px;
+    
+    2.字体：font-family:'微软雅黑';
+    注意：①若字体名字有空格或者标点符号的话需要加引号；
+    ②font-family:'微软雅黑',Aarial,simsun；写多种字体目的是：若浏览器没有第一个字体，则
+    显示第二个，若没有第二个则显示第三个，依次下去；
+    
+    3.字体粗细：font-weight:normal(400)/bold(700)/bolder/lighter;
+    
+    4.字体风格：font-style:normal/italic(倾斜);
+    
+    5.字体连写：font:font-style font-weight font-size(必须保留)/line-height font-family(必须保留);
+    
+    三.文本外观样式
+    1.文本颜色：color:red;
+    2.行间距：line-height:10px;
+    3.水平对齐方式：text-align:center;
+    4.首航缩进：text-indent:1em;(1em是段落中一个汉字的宽度)
+    5.文本的装饰：text-decoration:none/underline(下划线)/line-through(删除线)-->
+
+
+
+    <!-- 四.元素的显示模式 -->
+    <!-- 块级元素：<h>、<p>、<div>、<ul>、<ol>、<li>等，其中<div>是最典型的块级元素。
+        特点：每个元素通常占一整行或多整行，可以设置宽度、高度、对齐等属性。-->
+    <div class="kuai"></div>
+    <div class="kuai2"></div>
+
+    <!-- 行内元素：<a>、<strong>、<b>、<em>、<i>、<del>、<s>、<ins>、<u>、<span>，其中<span>是最典型的行内元素。
+        特点：和相邻行内元素在一行上，高、宽无效，但水平方向的padding和margin可以设置，垂直方向无效。-->
+    <span class="hang">111</span>
+    <span class="hang2">222</span>
+    <a href="#" class="hang3">111</a>
+
+    <!-- 行内块级元素 ：<img>、<input>、<td>，可以设置宽高和对齐属性。
+        特点：和相邻行内元素在一行上，但中间有间隙；默认宽度就是本身类容的的宽度；宽度、高度、内边距、和外边距都
+    可以控制。-->
+    <input type="text" name="" id="">
+    <input type="text" name="" id="">
+
+</body>
+
+</html>

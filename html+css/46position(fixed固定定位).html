@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 固定定位
+        注意：
+        1.可以看成是特殊的绝对定位
+
+        2.脱离标准流，不占位置，只以浏览器当前屏幕为基准点
+        */
+        .father {
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+            position: relative;
+            margin: 300px;
+        }
+
+        /* 若不是固定定位，该子盒子应该在父盒子里面 */
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            position: fixed;
+            left: 50px;
+            top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>

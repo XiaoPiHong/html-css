@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 其实这个before是一个盒子，而且是行内盒子 */
+        /* 在该元素的内容开头添加一个行内块盒子 */
+        .div1::before {
+            /* 用该伪元素选择器必须带一个 content属性 */
+            content: "我";
+            width: 200px;
+            height: 200px;
+            display: block;
+            background-color: red;
+        }
+
+
+
+        /* 其实这个after也是一个盒子，而且是行内盒子 */
+        /* 在该元素的内容开头添加一个行内块盒子 */
+        .div2::after {
+            /* 用该伪元素选择器必须带一个 content属性 */
+            content: "岁";
+            width: 200px;
+            height: 200px;
+            display: block;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">今年18岁</div>
+    <div class="div2">我今年18</div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            display: block;
+            width: 250px;
+            height: 400px;
+            position: relative;
+        }
+
+        .mask {
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4) url(images/arr.png) no-repeat center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+
+        /* 什么时候出来？ 鼠标 放到a身上   是   a里面的  .mask出来 */
+        a:hover .mask {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">
+        <img src="images/3.jpg" width="250" height="400px">
+        <div class="mask"></div>
+    </a>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            margin: 200px auto;
+            transition: all 1s;
+        }
+
+        div:hover {
+            /* 注意：2d变化如果有多个变化属性，则需要连写，空格隔开 */
+            transform: translate(0, 100px) scale(0.8) rotate(30deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

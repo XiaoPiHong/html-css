@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 把带有class属性的选择出来 */
+        /* div[class] {
+            background-color: pink;
+        } */
+
+        /* 把属性class=test的现在出来 */
+        /* div[class=test] {
+            background-color: pink;
+        } */
+
+        /* 把class属性以test开头的选择出来 */
+        /* div[class^=test] {
+            background-color: pink;
+        } */
+
+        /* 把class属性以e结尾的选择出来 */
+        /* div[class$=e] {
+            background-color: pink;
+        } */
+
+        /* 把class属性包含e的都选择出来 */
+        div[class*=e] {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div>111</div>
+    <div class="test">222</div>
+    <div class="share">333</div>
+    <div>444</div>
+    <div class="test111">555</div>
+    <div class="111test111">555</div>
+</body>
+
+</html>

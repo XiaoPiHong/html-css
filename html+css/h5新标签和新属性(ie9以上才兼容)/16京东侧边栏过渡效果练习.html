@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        li {
+            width: 30px;
+            height: 30px;
+            background-color: pink;
+            margin: 5px 0;
+            position: relative;
+        }
+
+        .subnav {
+            width: 30px;
+            margin: 100px auto;
+        }
+
+        .subnav li div {
+            width: 0;
+            height: 30px;
+            background-color: purple;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 1s;
+            z-index: -1;
+        }
+
+        .subnav li:hover div {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="subnav">
+        <ul>
+            <li>
+                <div></div>
+            </li>
+            <li>
+                <div></div>
+            </li>
+            <li>
+                <div></div>
+            </li>
+            <li>
+                <div></div>
+            </li>
+            <li>
+                <div></div>
+            </li>
+            <li>
+                <div></div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

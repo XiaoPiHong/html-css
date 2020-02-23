@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url(images/wx.jpg) repeat-x;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        ul.nav {
+            margin: 20px 30px 0;
+            /* 清除浮动 */
+            overflow: hidden;
+        }
+
+        ul.nav li {
+            float: left;
+            margin: 0 10px;
+        }
+
+        /* a 左边放 左圆角 但是文字要往左走 15px  */
+        .nav a {
+            display: inline-block;
+            height: 33px;
+            text-decoration: none;
+            line-height: 33px;
+            padding-left: 15px;
+            color: #fff;
+            background: url(images/to.png) no-repeat;
+        }
+
+        /* span 左边放 左圆角 但是文字要往左走 15px  */
+        .nav span {
+            display: inline-block;
+            height: 33px;
+            line-height: 33px;
+            padding-right: 15px;
+            background: url(images/to.png) no-repeat right;
+        }
+
+        /* 并集写法，简洁 */
+        .nav a:hover,
+        .nav a:hover span {
+            background-image: url(images/ao.png);
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li><a href=""><span>首页</span></a></li>
+        <li><a href=""><span>三个字</span></a></li>
+        <li><a href=""><span>下载客户端</span></a></li>
+    </ul>
+</body>
+
+</html>

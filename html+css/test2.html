@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 表示鼠标经过.test li时，.test li a的背景颜色改变 */
+        /* 自己总结的方法：:hover前面的元素是 鼠标经过该元素 才会发生变化
+                         把:hover去掉后，剩下的部分是会变化的元素 
+        */
+        .test li:hover a {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="test">
+        <li><span>图标</span><a href="#">文字</a></li>
+    </ul>
+    <a href="#">2222</a>
+</body>
+
+</html>

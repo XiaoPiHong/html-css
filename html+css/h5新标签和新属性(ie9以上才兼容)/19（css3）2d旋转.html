@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px auto;
+            /* 过渡的效果体现2d旋转 */
+            transition: all 1s;
+            /* 设置旋转中心点为右下角 */
+            transform-origin: right bottom;
+        }
+
+        .div1:hover {
+            /* 顺时针旋转90度，负的则为逆时针旋转 */
+            transform: rotate(90deg);
+        }
+
+
+
+
+
+
+
+
+
+
+
+        /* 下面是一个2d旋转的例子 */
+        .div2 {
+            width: 100px;
+            height: 80px;
+            background-color: skyblue;
+            margin: 200px auto;
+            position: relative;
+        }
+
+        .div2 div {
+            position: absolute;
+            width: 100px;
+            height: 80px;
+            top: 0;
+            left: 0;
+            transition: all 1s;
+            transform-origin: top right;
+        }
+
+        .div2:hover div:first-child {
+            transform: rotate(60deg);
+            background-color: black;
+        }
+
+        .div2:hover div:nth-child(2) {
+            transform: rotate(120deg);
+            background-color: green;
+        }
+
+        .div2:hover div:nth-child(3) {
+            transform: rotate(180deg);
+            background-color: yellow;
+        }
+
+        .div2:hover div:nth-child(4) {
+            transform: rotate(240deg);
+            background-color: red;
+        }
+
+        .div2:hover div:nth-child(5) {
+            transform: rotate(300deg);
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">123</div>
+    <div class="div2">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>
