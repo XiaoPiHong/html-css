@@ -44,10 +44,27 @@
             width: 200px;
             height: auto;
             animation: heart 0.5s infinite;
+            /* 动画的谷歌前缀写法 */
+            -webkit-animation: heart 0.5s infinite;
         }
 
         /* 要是有多个状态可以用该方法写 */
         @keyframes heart {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* 动画的谷歌前缀写法 */
+        @-webkit-keyframes heart {
             0% {
                 transform: scale(1);
             }

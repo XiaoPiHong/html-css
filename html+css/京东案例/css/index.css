@@ -75,7 +75,7 @@
 
 .jd-col2-hd li img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .arr-l,
@@ -134,7 +134,7 @@
 
 .jd-col2-bd div img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .firstPic {
@@ -190,7 +190,7 @@
 .info-img img {
     /* 此处为响应式图片的写法 */
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .user-profit {

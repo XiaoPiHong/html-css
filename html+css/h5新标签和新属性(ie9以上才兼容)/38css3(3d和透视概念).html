@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 注意：1.perspective一般作为一个属性，设置给父元素，作用与所有3d转换的子元素；
+        2.perspective：视距，表示视点距离屏幕的长短。视点：用于模拟透视效果时人眼的位置；
+        3.一般perspective:500px;足以够我们3d的开发。 */
+        body {
+            perspective: 500px;
+        }
+
+        img {
+            transition: all 2s;
+        }
+
+        img:hover {
+            /* 绕x轴旋转 */
+            transform: rotateX(360deg);
+
+            /* 绕y轴旋转
+            transform: rotateY(180deg);*/
+
+            /* 绕z轴旋转,和2d得旋转效果差不多
+            transform: rotateZ(180deg);*/
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../images/2.jpg" alt="">
+</body>
+
+</html>
