@@ -1,40 +1,50 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-02-24 00:00:24
+ * @LastEditTime: 2020-09-15 14:46:26
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \前端自学资料\html-css\html+css\h5新标签和新属性(ie9以上才兼容)\10before和after伪元素(css3).html
+-->
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        /* 其实这个before是一个盒子，而且是行内盒子 */
-        /* 在该元素的内容开头添加一个行内块盒子 */
-        .div1::before {
-            /* 用该伪元素选择器必须带一个 content属性 */
-            content: "我";
-            width: 200px;
-            height: 200px;
-            display: block;
-            background-color: red;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /* ::before和::after也是伪元素选择器，只不过用双引号是当前引入的规范，方便区分伪元素和伪类。也就是说，要是浏览器版本旧的最好用单引号，比较新的版本就用双引号 */
+
+            /* 其实这个before是一个盒子，而且是行内盒子 */
+            /* 在该div元素的内容开头添加一个行内块盒子，本身这个before是行内盒子 */
+            .div1::before {
+                /* 用该伪元素选择器必须带一个 content属性 */
+                content: "我";
+                width: 200px;
+                height: 200px;
+                display: inline-block;
+                background-color: red;
+            }
 
 
 
-        /* 其实这个after也是一个盒子，而且是行内盒子 */
-        /* 在该元素的内容开头添加一个行内块盒子 */
-        .div2::after {
-            /* 用该伪元素选择器必须带一个 content属性 */
-            content: "岁";
-            width: 200px;
-            height: 200px;
-            display: block;
-            background-color: red;
-        }
-    </style>
-</head>
+            /* 其实这个after也是一个盒子，而且是行内盒子 */
+            /* 在该div元素的内容末尾添加一个行内块盒子，本身这个after是行内盒子 */
+            .div2::after {
+                /* 用该伪元素选择器必须带一个 content属性 */
+                content: "岁";
+                width: 200px;
+                height: 200px;
+                display: inline-block;
+                background-color: red;
+            }
+        </style>
+    </head>
 
-<body>
-    <div class="div1">今年18岁</div>
-    <div class="div2">我今年18</div>
-</body>
+    <body>
+        <div class="div1">今年18岁</div>
+        <div class="div2">我今年18</div>
+    </body>
 
 </html>

@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        div {
-            width: 632px;
-            height: 340px;
-            position: relative;
-            /* 添加圆角，并且设置超出隐藏 */
-            border-radius: 10px;
-            overflow: hidden;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            div {
+                width: 632px;
+                height: 340px;
+                position: relative;
+                /* 添加圆角，并且设置超出隐藏 */
+                border-radius: 10px;
+                overflow: hidden;
+            }
 
-        /* 用伪元素的方法在盒子里面建一个行内块盒子 */
-        div:hover::after {
-            content: "";
-            /* 用子绝父相的定位方式把伪元素盒子定位在左上角，并且赋予父亲一样的宽度和高度 */
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 20px solid rgba(255, 255, 255, 0.3);
-            /* 使用css3的盒子定位模型，不染加边框会撑开盒子 */
-            box-sizing: border-box;
-        }
-    </style>
-</head>
+            /* 用伪元素的方法在盒子里面建一个行内块盒子（绝对定位和固定定位都会模式转换为 行内块元素） */
+            div:hover::after {
+                content: "";
+                /* 用子绝父相的定位方式把伪元素盒子定位在左上角，并且赋予父亲一样的宽度和高度 */
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 20px solid rgba(255, 255, 255, 0.3);
+                /* 使用css3的盒子定位模型，不染加边框会撑开盒子 */
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
 
-<body>
-    <div><img src="../images/mi.jpg"></div>
-</body>
+    <body>
+        <div><img src="../images/mi.jpg"></div>
+    </body>
 
 </html>
